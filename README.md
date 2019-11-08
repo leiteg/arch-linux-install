@@ -269,7 +269,7 @@ export LANG=en_US.UTF-8
 Assign your machine a host name:
 
 ```bash
-echo "archlinux" > hostname
+echo "YOUR_HOSTNAME" > hostname
 ```
 
 Then add the following entries at the end of the `/etc/hosts` file:
@@ -278,7 +278,7 @@ Then add the following entries at the end of the `/etc/hosts` file:
 # /etc/hosts
 127.0.0.1     localhost
 ::1           localhost
-127.0.1.1     archlinux.localdomain archlinux
+127.0.1.1     YOUR_HOSTNAME.localdomain YOUR_HOSTNAME
 ```
 
 ### 3.6. Bootloader
@@ -318,26 +318,25 @@ working and development. These are the steps I usually go through.
 ### 4.1. User Creation
 
 Although you can create your user *after* booting into the system, I prefer to
-do it here. Choose whichever username you desire, in my case I choose
-*leite*. Do not forget to setup passwords for both root and your user.
+do it here. Do not forget to setup passwords for both root and your user.
 
 ```bash
-useradd -m -G users leite
-#        |  |   |     |
-#        |  |   |     `--> Username
+useradd -m -G users YOUR_USERNAME
+#        |  |   |
+#        |  |   |
 #        |  |   `--> Group name
 #        |  `--> Which group the user belongs
 #        `--> Create a /home folder for this user
 
-passwd        # Create root password
-passwd leite  # Create user password
+passwd                # Create root password
+passwd YOUR_USERNAME  # Create user password
 ```
 
 Also, enable your user to use `sudo`. Edit the file `/etc/sudoers`.
 
 ```bash
 # Enable your user by inserting a line like this:
-#    leite ALL=(ALL) ALL
+#    YOUR_USERNAME ALL=(ALL) ALL
 visudo /etc/sudoers
 ```
 
@@ -440,7 +439,7 @@ systemctl enable --now networkmanager.service
 systemctl enable --now sshd.service
 
 # Change my user's default shell to zsh
-chsh -s $(which zsh) leite
+chsh -s $(which zsh) YOUR_USERNAME
 ```
 
 > **Note:** Font rendering in Linux is below average, to say the least. Here are

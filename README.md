@@ -13,7 +13,7 @@ for any mistakes contained here. Use with caution!
 
 A fuller and more in-depth tutorial can be found in the [Arch Linux Wiki][1].
 If you would like to suggest improvements or report any errors, I'll be glad to
-hear from you via email. Enjoy! 🤠
+hear from you via email or open an issue on [Github][11]. Enjoy! 🤠
 
 ## Table of Contents
 
@@ -482,3 +482,4 @@ page in the Arch Wiki.
 [8]: https://wiki.archlinux.org/index.php/Arch_User_Repository
 [9]: https://github.com/jguer/yay
 [10]: https://wiki.archlinux.org/index.php/General_Recommendations
+[11]: https://github.com/leiteg/arch-linux-install/issues

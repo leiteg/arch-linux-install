@@ -5,7 +5,8 @@
 # Arch Linux Installation
 
 > Author: Gustavo Leite `<contact[at]gustavoleite.me>` | Created: November 2019
-> | License: MIT
+
+![GitHub](https://img.shields.io/github/license/leiteg/arch-linux-install)
 
 This is the script I follow for installing Arch Linux on my own machine. For
 that matter, it is heavily skewed towards *my* needs. I do not claim that this

@@ -301,6 +301,9 @@ pacman -S grub-efi-x86_64 os-prober efibootmgr
 
 # Install GRUB on the EFI partition
 grub-install --recheck /dev/sda1 --efi-directory=/boot/EFI
+#                 |       |
+#                 |       `--> Your boot partition
+#                 `--> Check for new drives
 
 # Create a config file for GRUB
 grub-mkconfig -o /boot/grub/grub.cfg

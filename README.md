@@ -2,7 +2,7 @@
    <img alt="Arch Linux Logo" src="image/archlinux-logo.png">
 </p>
 
-# Arch Linux Installation
+# Arch Linux Installation Guide
 
 > Author: Gustavo Leite `<contact[at]gustavoleite.me>` | Created: November 2019
 

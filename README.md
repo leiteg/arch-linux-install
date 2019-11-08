@@ -8,14 +8,14 @@
 
 ![GitHub](https://img.shields.io/github/license/leiteg/arch-linux-install)
 
-This is the script I follow for installing Arch Linux on my own machine. For
+This is the script I follow for installing Arch Linux on my own machines. For
 that matter, it is heavily skewed towards *my* needs. I do not claim that this
-script is the most appropriate for every system nor do I hold responsibility
+script is the most appropriate for every scenario nor do I hold responsibility
 for any mistakes contained here. Use with caution!
 
 A fuller and more in-depth tutorial can be found in the [Arch Linux Wiki][1].
 If you would like to suggest improvements or report any errors, I'll be glad to
-hear from you via email or open an issue on [Github][11].
+hear from you! Reach out to me via email or open an issue on [Github][11].
 
 This guide is distributed under the [MIT License](LICENSE). Enjoy! 🤠
 
@@ -310,8 +310,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 > **Note:** There is an alternative to GRUB called [rEFInd][5] (`refind-efi`).
-> Be ware that rEFInd is not compatible with every filesystem, read the manual
-> to know more.
+> Beware that rEFInd is not compatible with some filesystems, read the manual
+> before installing it.
 
 ## 4. Post Installation
 
@@ -448,12 +448,12 @@ chsh -s $(which zsh) YOUR_USERNAME
 ```
 
 > **Note:** Font rendering in Linux is below average, to say the least. Here are
-> [some tips][3] that can help improve it.
+> [some tips][3] to improve it.
 
 ### 4.6. Other Things
 
-This section shows some other things I find it useful to do. However, I usually
-do them *after* booting natively into the new system (and not from a chroot'ed
+This section shows some other things I find useful to do. However, I usually
+run them *after* booting natively into the new system (and not from a chroot'ed
 system).
 
 ```bash
@@ -469,16 +469,15 @@ pip install yapf jupyter
 
 Besides the official Arch Linux repositories, there is the [Arch User
 Repository][8] (AUR) which is maintained by users and provides even more
-packages.  However, to download packages from AUR, you will have to
-install a wrapper for `pacman`. There are several in the market, but I would
-recommend [yay][9].
+packages.  However, to download packages from AUR, you need to install a
+wrapper for `pacman`. There are several in the market, but I would recommend
+[yay][9].
 
 ## Before you go...
 
-Now your OS is installed with (hopefully) everything you need. Run `exit` to
-quit the `arch-root` and then `reboot`. You should be greeted with the GRUB
-screen! You can look for further resources in the [general recommendations][10]
-page in the Arch Wiki.
+Now your OS is installed and ready! Run `exit` to quit the `arch-root` and then
+`reboot`. You should be greeted with the GRUB screen. You can look for further
+resources in the [general recommendations][10] page in the Arch Wiki.
 
 [1]: https://wiki.archlinux.org/index.php/Installation_Guide
 [2]: https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/

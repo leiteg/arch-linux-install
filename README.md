@@ -211,9 +211,9 @@ system you just installed and not to the the Live USB.
 
 ```bash
 arch-chroot /mnt bash
-#	     |    |
-#	     |	  `--> Which shell to use (`sh` is default)
-#	     `--> New root
+#            |    |
+#            |    `--> Which shell to use (`sh` is default)
+#            `--> New root
 ```
 
 ### 3.3. Timezone
@@ -425,15 +425,15 @@ pacman -S openssh git base-devel clang intel-ucode coreutils \
 
 # User programs
 pacman -S firefox networkmanager network-manager-applet \
-	  texlive-most neofetch
+          texlive-most neofetch
 
 # Drivers for NVIDIA
 pacman -S nvidia nvidia-libgl
 
 # Fonts
 pacman -S ttf-dejavu ttf-fira-code ttf-fira-sans ttf-hack \
-	  ttf-liberation ttf-roboto noto-fonts noto-fonts-extra \
-	  noto-fonts-emoji noto-fonts-cjk
+          ttf-liberation ttf-roboto noto-fonts noto-fonts-extra \
+          noto-fonts-emoji noto-fonts-cjk
 
 # Enable services
 systemctl enable --now networkmanager.service

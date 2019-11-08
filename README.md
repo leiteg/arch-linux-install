@@ -5,6 +5,7 @@
 # Arch Linux Installation
 
 > Author: Gustavo Leite `<contact[at]gustavoleite.me>` | Created: November 2019
+> | License: MIT
 
 This is the script I follow for installing Arch Linux on my own machine. For
 that matter, it is heavily skewed towards *my* needs. I do not claim that this
@@ -13,7 +14,9 @@ for any mistakes contained here. Use with caution!
 
 A fuller and more in-depth tutorial can be found in the [Arch Linux Wiki][1].
 If you would like to suggest improvements or report any errors, I'll be glad to
-hear from you via email or open an issue on [Github][11]. Enjoy! 🤠
+hear from you via email or open an issue on [Github][11].
+
+This guide is distributed under the [MIT License](LICENSE). Enjoy! 🤠
 
 ## Table of Contents
 

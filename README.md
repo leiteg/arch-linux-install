@@ -411,6 +411,7 @@ may vary from your needs.
 - `gvim`: Graphical vim (with clipboard support)
 - `zsh`: Z-Shell
 - `htop`: Interactive process viewer
+- `cmake`: build system
 
 These are also other programs that I always install:
 
@@ -423,7 +424,8 @@ These are also other programs that I always install:
 ```bash
 # Development and administration
 pacman -S openssh git base-devel clang intel-ucode coreutils \
-          strace ltrace gdb tmux zsh python-pip gvim zsh htop
+          strace ltrace gdb tmux zsh python-pip gvim zsh htop \
+          cmake
 
 # User programs
 pacman -S firefox networkmanager network-manager-applet \

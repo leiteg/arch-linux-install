@@ -400,7 +400,7 @@ may vary from your needs.
 - `openssh`: Secure Shell (SSH)
 - `git`: Control version system
 - `base-devel`: GNU development tools
-- `clang`: C/C++ compiler
+- `llvm`, `clang`: C/C++ compiler and libraries
 - `intel-ucode`: Microcode update for Intel CPUs (For AMD: `amd-ucode`)
 - `coreutils`: GNU file, shell and text utilities
 - `strace`: Track system calls
@@ -423,7 +423,7 @@ These are also other programs that I always install:
 
 ```bash
 # Development and administration
-pacman -S openssh git base-devel clang intel-ucode coreutils \
+pacman -S openssh git base-devel llvm clang intel-ucode coreutils \
           strace ltrace gdb tmux zsh python-pip gvim zsh htop \
           cmake
 

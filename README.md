@@ -440,7 +440,7 @@ pacman -S ttf-dejavu ttf-fira-code ttf-fira-sans ttf-hack \
           noto-fonts-emoji noto-fonts-cjk
 
 # Enable services
-systemctl enable --now networkmanager.service
+systemctl enable --now NetworkManager.service
 systemctl enable --now sshd.service
 
 # Change my user's default shell to zsh
